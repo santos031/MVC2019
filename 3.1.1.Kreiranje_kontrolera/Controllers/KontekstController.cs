@@ -25,7 +25,7 @@ namespace _3._1._1.Kreiranje_kontrolera.Controllers
             {
                 string ime = Request.QueryString["Ime"];
                 string prezime = Request.QueryString["Prezime"];
-                string tekstSaStilom = string.Format("<label style='color:red; font-weightt:bold;'>{0} {1}</label>", ime, prezime);
+                string tekstSaStilom = string.Format("<label style='color:red; font-weight:bold;'>{0} {1}</label>", ime, prezime);
                 return string.Format("<p> Ime i prezime iz query stringa su: {0}</p>", tekstSaStilom);
             }
         }
