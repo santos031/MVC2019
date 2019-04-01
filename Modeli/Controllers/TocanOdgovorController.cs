@@ -8,14 +8,17 @@ namespace Modeli.Controllers
 {
     public class TocanOdgovorController : Controller
     {
-      public ViewResult ProvjeriOdgovor()
+        //GET:/TocanOdgovor
+        public ViewResult ProvjeriOdgovor()
         {
             return View();
         }
 
+        //POST:/TocanOdgovor/ProvjeriOdgovor
         [HttpPost]
         public ViewResult ProvjeriOdgovor(string odgovor)
         {
+            string rezultat;
             if (!string.IsNullOrEmpty(odgovor))
             {
                 if (odgovor == "Bruxelles")

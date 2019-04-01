@@ -18,9 +18,9 @@ namespace _4._2._1.Narudzba_artikala.Controllers
         [HttpPost]
         public ViewResult NaruciArtikal(Artikal artikal)
         {
-            if(artikal.Kolicina > 10)
+            if (artikal.Kolicina > 10)
             {
-                ViewBag.Poruka="Nema dovoljno" + artikal.Naziv + "na skladištu!");
+                ViewBag.Poruka = "Nema dovoljno" + artikal.Naziv + "na skladištu!");
                 return View(artikal);
             }
             else

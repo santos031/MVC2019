@@ -14,9 +14,9 @@ namespace Modeli.Controllers
             return View();
         }
 
-        //POST
+        //POST: /BrojGodina/RacunajBrojGodina
         [HttpPost]
-        public VuewResult RacunajBrojGodina(DateTime datum)
+        public ViewResult RacunajBrojGodina(DateTime datum)
         {
             int brojGodina;
             try
