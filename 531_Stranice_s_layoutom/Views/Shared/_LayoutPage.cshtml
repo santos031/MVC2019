@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <style type="text/css">
+        .tg {
+            border-collapse: collapse;
+            border-spacing: 0;
+            border-color: #bbb;
+        }
+
+            .tg td {
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+                padding: 10px 5px;
+                border-style: solid;
+                border-width: 0px;
+                overflow: hidden;
+                word-break: normal;
+                border-top-width: 1px;
+                border-bottom-width: 1px;
+                border-color: #bbb;
+                color: #594F4F;
+                background-color: #E0FFEB;
+            }
+
+            .tg th {
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+                font-weight: normal;
+                padding: 10px 5px;
+                border-style: solid;
+                border-width: 0px;
+                overflow: hidden;
+                word-break: normal;
+                border-top-width: 1px;
+                border-bottom-width: 1px;
+                border-color: #bbb;
+                color: #493F3F;
+                background-color: #9DE0AD;
+            }
+
+            .tg .tg-lunv {
+                font-family: Georgia, serif !important;
+                ;
+                background-color: #ffce93;
+                text-align: left;
+                vertical-align: top
+            }
+
+            .tg .tg-lobw {
+                font-weight: bold;
+                font-family: Georgia, serif !important;
+                ;
+                background-color: #96fffb;
+                color: #fe0000;
+                text-align: left;
+                vertical-align: top
+            }
+
+            .tg .tg-2kxh {
+                background-color: #ffce93;
+                font-style: italic;
+                font-family: Georgia, serif !important;
+                ;
+                text-align: left;
+                vertical-align: top
+            }
+
+            .tg .tg-eh0l {
+                font-weight: bold;
+                font-family: Georgia, serif !important;
+                ;
+                background-color: #96fffb;
+                color: #fe0000;
+                text-align: left
+            }
+
+            .tg .tg-6nh6 {
+                background-color: #ffce93;
+                font-family: Georgia, serif !important;
+                ;
+                text-align: left;
+                vertical-align: top
+            }
+
+            .tg .tg-3otw {
+                font-style: italic;
+                font-family: Georgia, serif !important;
+                ;
+                background-color: #ffce93;
+                text-align: left;
+                vertical-align: top
+            }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="/LayoutSection/Stranica1">Stranica 1</a> | <a href="/LayoutSection/Stranica2">Stranica 2</a>>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+    <div>
+        @RenderSection("Detalji", required: false)
+        </div>
+</body>
+</html>

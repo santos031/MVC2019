@@ -190,6 +190,9 @@
     <Content Include="Views\PozdravSvijete\Index.cshtml" />
     <Content Include="Views\Prvi\DrugaMetodaSaParametrima.cshtml" />
     <Content Include="Views\RazorSintaksa\SwitchView.cshtml" />
+    <Content Include="Views\RazorSintaksa\ViewZaForPetlju.cshtml" />
+    <Content Include="Views\Shared\OsnovniLayout.cshtml" />
+    <Content Include="Views\Shared\PosebniLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

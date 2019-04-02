@@ -9,9 +9,15 @@ namespace HelloWorld.Controllers
     public class RazorSintaksaController : Controller
     {
         // GET: RazorSintaksa
-        public ActionResult Index()
+        public ViewResult SwitchView()
         {
             return View();
+        }
+
+        public ViewResult ViewZaForPetlju()
+        {
+            string[] voce = new string[] { "jabuka", "kruška", "limun", "banana", "šljiva" };
+            return View(voce);
         }
     }
 }
