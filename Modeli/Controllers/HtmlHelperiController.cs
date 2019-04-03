@@ -29,7 +29,21 @@ namespace Modeli.Controllers
         public ViewResult FormHelper(Osoba osoba)
         {
             ViewBag.Mjesta = this.mjesta;
-            ViewBag.Poruka = "Ovo je poruka";
+            ViewBag.Poruka = "Podaci su unešeni!";
+            return View(new Osoba());
+        }
+
+        public ViewResult StrongTypedFormHelper()
+        {
+            ViewBag.Mjesta = this.mjesta;
+            return View(new Osoba());
+        }
+
+        [HttpPost]
+        public ViewResult StrongTypedFormHelper(Osoba osoba)
+        {
+            ViewBag.Mjesta = this.mjesta;
+            ViewBag.Poruka = "Podaci su unešeni!";
             return View(new Osoba());
         }
     }
