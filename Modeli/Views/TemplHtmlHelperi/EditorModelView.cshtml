@@ -1,0 +1,30 @@
+﻿@model Modeli.Models.OsobaTempl
+@{
+    Layout = null;
+    Html.EnableClientValidation(false);
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>EditorModelView</title>
+    <style>
+        label {display: inline-block; width:150 px; font-weight:bold;}
+        .editor-label {clear:left; float:left; margin-top:10px;}
+        .editor-field{float:left; margin-top: 10px; margin-left: 10px;}
+        input[type=submit] {float:left; clear:both; margin-top: 10px;}
+    </style>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm())
+        {
+            @Html.EditorForModel()
+            <input type="submit" value="Pošalji" />
+        }
+    </div>
+</body>
+</html>
+
+
