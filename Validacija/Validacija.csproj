@@ -9,12 +9,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{ECD03A1E-7356-450C-8D0E-3A84664BED9A}</ProjectGuid>
+    <ProjectGuid>{5056F7BE-80DF-40B7-9026-CBBDA641BADE}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Modeli</RootNamespace>
-    <AssemblyName>Modeli</AssemblyName>
+    <RootNamespace>Validacija</RootNamespace>
+    <AssemblyName>Validacija</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
@@ -25,7 +25,6 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -142,23 +141,14 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\ChildActionController.cs" />
-    <Compile Include="Controllers\HtmlHelperiController.cs" />
-    <Compile Include="Controllers\MetaDataHtmlHelperiController.cs" />
-    <Compile Include="Controllers\ParcijalniPogledController.cs" />
-    <Compile Include="Controllers\TemplHtmlHelperiController.cs" />
-    <Compile Include="Controllers\TocanOdgovorController.cs" />
-    <Compile Include="Controllers\BrojGodinaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\OsobeController.cs" />
-    <Compile Include="Controllers\SimpleBindingController.cs" />
+    <Compile Include="Controllers\ValidacijeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Adresa.cs" />
-    <Compile Include="Models\Osoba.cs" />
-    <Compile Include="Models\OsobaMeta.cs" />
-    <Compile Include="Models\OsobaTempl.cs" />
+    <Compile Include="Models\MetaRacun.cs" />
+    <Compile Include="Models\Racun.cs" />
+    <Compile Include="Models\Validacije\NeViseOdTriDanaAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -198,24 +188,16 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\SimpleBinding\SimpleBind.cshtml" />
-    <Content Include="Views\Osobe\PopuniOsobu.cshtml" />
-    <Content Include="Views\BrojGodina\RacunajBrojGodina.cshtml" />
-    <Content Include="Views\TocanOdgovor\ProvjeriOdgovor.cshtml" />
-    <Content Include="Views\ChildAction\ChildActionView.cshtml" />
-    <Content Include="Views\HtmlHelperi\Index.cshtml" />
-    <Content Include="Views\HtmlHelperi\FormHelper.cshtml" />
-    <Content Include="Views\HtmlHelperi\StrongTypedFormHelper.cshtml" />
-    <Content Include="Views\TemplHtmlHelperi\HtmlEditorView.cshtml" />
-    <Content Include="Views\TemplHtmlHelperi\HtmlLabelDisplay.cshtml" />
-    <Content Include="Views\TemplHtmlHelperi\EditorModelView.cshtml" />
-    <Content Include="Views\MetaDataHtmlHelperi\MetaDataView.cshtml" />
-    <Content Include="Views\MetaDataHtmlHelperi\HtmlLabelDisplay.cshtml" />
+    <Content Include="Views\Validacije\IzdavanjeRacuna.cshtml" />
+    <Content Include="Views\Validacije\RacunIzdan.cshtml" />
+    <Content Include="Views\Shared\_LayoutValidacija.cshtml" />
+    <Content Include="Views\view_ViewStart.cshtml" />
+    <Content Include="Views\Validacije\IzdavanjeRacuna2.cshtml" />
+    <Content Include="Views\Validacije\MetaIzdavanjeRacuna.cshtml" />
+    <Content Include="Views\Validacije\MetaRacunIzdan.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Modeli\" />
-    <Folder Include="Views\ParcijalniPogled\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -248,9 +230,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>63195</DevelopmentServerPort>
+          <DevelopmentServerPort>62872</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:63195/</IISUrl>
+          <IISUrl>http://localhost:62872/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.2.1.Narudzba_artikala", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "531_Stranice_s_layoutom", "531_Stranice_s_layoutom\531_Stranice_s_layoutom.csproj", "{34ABC34D-7F54-4118-A8FC-77047CBF48A6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validacija", "Validacija\Validacija.csproj", "{5056F7BE-80DF-40B7-9026-CBBDA641BADE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +61,10 @@ Global
 		{34ABC34D-7F54-4118-A8FC-77047CBF48A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34ABC34D-7F54-4118-A8FC-77047CBF48A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34ABC34D-7F54-4118-A8FC-77047CBF48A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5056F7BE-80DF-40B7-9026-CBBDA641BADE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5056F7BE-80DF-40B7-9026-CBBDA641BADE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5056F7BE-80DF-40B7-9026-CBBDA641BADE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5056F7BE-80DF-40B7-9026-CBBDA641BADE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

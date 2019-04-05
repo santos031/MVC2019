@@ -1,0 +1,39 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_LayoutValidacija</title>
+    <style type="text/css">
+        .field-validation-error {
+            color: red;
+        }
+
+        .validation-summary-errors {
+            color: red;
+            font-weight: bold;
+        }
+
+        .input-validation-error {
+            background-color: red;
+            border: 2px;
+        }
+
+        input[type="checkbox"].input-validation-error {
+            outline: 2px solid #f00;
+        }
+    </style>
+
+    <script src="~/Scripts/"
+</head>
+<body>
+    <div> 
+        @RenderBody()
+    </div>
+</body>
+</html>
