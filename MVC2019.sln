@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "531_Stranice_s_layoutom", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validacija", "Validacija\Validacija.csproj", "{5056F7BE-80DF-40B7-9026-CBBDA641BADE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ado_net_spajanje_na_bazu", "Ado_net_spajanje_na_bazu\Ado_net_spajanje_na_bazu.csproj", "{6A19584D-0E30-4A69-9F01-B867C8EABA77}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -65,6 +67,10 @@ Global
 		{5056F7BE-80DF-40B7-9026-CBBDA641BADE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5056F7BE-80DF-40B7-9026-CBBDA641BADE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5056F7BE-80DF-40B7-9026-CBBDA641BADE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A19584D-0E30-4A69-9F01-B867C8EABA77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A19584D-0E30-4A69-9F01-B867C8EABA77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A19584D-0E30-4A69-9F01-B867C8EABA77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A19584D-0E30-4A69-9F01-B867C8EABA77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
