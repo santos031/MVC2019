@@ -19,7 +19,7 @@ namespace Ado_net_spajanje_na_bazu.Controllers
         public ActionResult Create()
         {
             //Prvo kreiramo conn string i Connection objekt
-            string connString = ConfigurationManager.ConnectionStrings["dbAlgebraConnStr"].ConnectionString;
+            string connString = ConfigurationManager.ConnectionStrings["dbAlgebraConnString"].ConnectionString;
            
             using (SqlConnection conn = new SqlConnection(connString))
             {
@@ -51,7 +51,7 @@ namespace Ado_net_spajanje_na_bazu.Controllers
 
         public ActionResult Edit()
         {
-            string connString = ConfigurationManager.ConnectionStrings["dbAlgebraConnStr"].ConnectionString;
+            string connString = ConfigurationManager.ConnectionStrings["dbAlgebraConnString"].ConnectionString;
 
             using (SqlConnection conn = new SqlConnection(connString))
             {          
@@ -80,7 +80,7 @@ namespace Ado_net_spajanje_na_bazu.Controllers
 
         public ActionResult Delete()
         {
-            string connString = ConfigurationManager.ConnectionStrings["dbAlgebraConnStr"].ConnectionString;
+            string connString = ConfigurationManager.ConnectionStrings["dbAlgebraConnString"].ConnectionString;
             using (SqlConnection conn = new SqlConnection(connString))
             {
                 string cmdTxt = "DELETE FROM [dbo].[tbltecajevi] "
@@ -105,7 +105,7 @@ namespace Ado_net_spajanje_na_bazu.Controllers
 
         public ActionResult Count()
         {
-            string connString = ConfigurationManager.ConnectionStrings["dbAlgebraConnStr"].ConnectionString;
+            string connString = ConfigurationManager.ConnectionStrings["dbAlgebraConnString"].ConnectionString;
             using (SqlConnection conn = new SqlConnection(connString))
             {
                 string cmdTxt = "SELECT COUNT(*) FROM [dbo].[tbltecajevi] ";

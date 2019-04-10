@@ -14,7 +14,8 @@ namespace Ado_net_spajanje_na_bazu.Controllers
         // GET: SqlDataReaderObjekt
         public ActionResult Index()
         {
-            string connString = ConfigurationManager.ConnectionStrings["dbAlgebraConnStr"].ConnectionString;
+            //upisivanje connectionstringa u web.config
+            string connString = ConfigurationManager.ConnectionStrings["dbAlgebraConnString"].ConnectionString;
 
             //pripremim praznu listu tecajeva
             List<Tecaj> lstTecaj = new List<Tecaj>();
