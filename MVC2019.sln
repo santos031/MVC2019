@@ -25,7 +25,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validacija", "Validacija\Va
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ado_net_spajanje_na_bazu", "Ado_net_spajanje_na_bazu\Ado_net_spajanje_na_bazu.csproj", "{6A19584D-0E30-4A69-9F01-B867C8EABA77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adresar", "Adresar\Adresar.csproj", "{B15AE64D-DAC5-4F33-A8CC-36EB565E23CE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adresar", "Adresar\Adresar.csproj", "{42371614-0D19-46EF-A605-DC8C11FAB370}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,10 +73,10 @@ Global
 		{6A19584D-0E30-4A69-9F01-B867C8EABA77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A19584D-0E30-4A69-9F01-B867C8EABA77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A19584D-0E30-4A69-9F01-B867C8EABA77}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B15AE64D-DAC5-4F33-A8CC-36EB565E23CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B15AE64D-DAC5-4F33-A8CC-36EB565E23CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B15AE64D-DAC5-4F33-A8CC-36EB565E23CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B15AE64D-DAC5-4F33-A8CC-36EB565E23CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42371614-0D19-46EF-A605-DC8C11FAB370}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42371614-0D19-46EF-A605-DC8C11FAB370}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42371614-0D19-46EF-A605-DC8C11FAB370}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42371614-0D19-46EF-A605-DC8C11FAB370}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
