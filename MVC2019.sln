@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ado_net_spajanje_na_bazu", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adresar", "Adresar\Adresar.csproj", "{42371614-0D19-46EF-A605-DC8C11FAB370}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebShop", "WebShop\WebShop.csproj", "{4D2EC6C7-BCA9-453B-8CE6-5BA21259AD45}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +79,10 @@ Global
 		{42371614-0D19-46EF-A605-DC8C11FAB370}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42371614-0D19-46EF-A605-DC8C11FAB370}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42371614-0D19-46EF-A605-DC8C11FAB370}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D2EC6C7-BCA9-453B-8CE6-5BA21259AD45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D2EC6C7-BCA9-453B-8CE6-5BA21259AD45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D2EC6C7-BCA9-453B-8CE6-5BA21259AD45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D2EC6C7-BCA9-453B-8CE6-5BA21259AD45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,6 +92,7 @@ Global
 		{BED83ABE-733F-4E8F-89B2-CC260A027247} = {0A226FC8-8B91-4392-8169-16D247239839}
 		{8B824F7D-D79F-49DA-99BD-1A6E1D23E0CB} = {0A226FC8-8B91-4392-8169-16D247239839}
 		{34ABC34D-7F54-4118-A8FC-77047CBF48A6} = {0A226FC8-8B91-4392-8169-16D247239839}
+		{4D2EC6C7-BCA9-453B-8CE6-5BA21259AD45} = {0A226FC8-8B91-4392-8169-16D247239839}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9645ABE9-CCF0-41EC-B57E-C4C0CC681950}
