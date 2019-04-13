@@ -1,0 +1,25 @@
+﻿@model string
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>RacunajBrojGodina</title>
+</head>
+<body>
+    <div>
+        <form method="post">
+            <label>Unesite datum rođenja:</label>
+            <input type="text" name="datum" value="" />
+            <button type="submit">Pošalji</button>
+        </form>
+    </div>
+    <p>
+        <label style="font-weight:bold;">Broj godina: @Model</label>
+    </p>
+</body>
+</html>

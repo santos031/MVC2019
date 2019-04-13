@@ -1,0 +1,37 @@
+﻿@model HelloWorld.Models.Artikl
+@{
+    ViewBag.Title = "UnesiArtikal";
+}
+
+<h2>UnesiArtikal</h2>
+<style>
+    label {
+        width: 150px;
+        padding-top: 10px;
+        display: inline-block;
+    }
+</style>
+<div>
+    @using (Html.BeginForm("DodajArtikal", "ListaArtikala"))
+    {
+        <div>
+            <label for="Kategorija">Kategorija: </label>
+            @Html.DropDownListFor(y => y.Kategorija, new SelectList((string[])ViewBag.Kategorije, "--Odaberi--"))
+        </div>
+        <div>
+            <label for="Naziv">Naziv: </label>
+            @Html.TextBoxFor(y => y.Naziv)
+        </div>
+        <div>
+            <label for="Cijena">Cijena: </label>
+            @Html.TextBoxFor(y => y.Cijena)
+        </div>
+        <div>
+            <label for="Kolicina">Količina: </label>
+            @Html.TextBoxFor(y => y.Kolicina)
+        </div>
+        <div>
+            <button type="submit">Dodaj</button>
+        </div>
+    }
+</div>
