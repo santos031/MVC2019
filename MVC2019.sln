@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.16
+VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication_osnove", "WebApplication_osnove\WebApplication_osnove.csproj", "{B49C5249-41F4-4CCF-8C15-9BCCE487D3A3}"
 EndProject
@@ -24,6 +24,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validacija", "Validacija\Validacija.csproj", "{5056F7BE-80DF-40B7-9026-CBBDA641BADE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ado_net_spajanje_na_bazu", "Ado_net_spajanje_na_bazu\Ado_net_spajanje_na_bazu.csproj", "{6A19584D-0E30-4A69-9F01-B867C8EABA77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADO_NET_komponente", "ADO_NET_komponente\ADO_NET_komponente.csproj", "{50F9B6AA-C281-434A-B310-200D5C5D1A39}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +73,10 @@ Global
 		{6A19584D-0E30-4A69-9F01-B867C8EABA77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A19584D-0E30-4A69-9F01-B867C8EABA77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A19584D-0E30-4A69-9F01-B867C8EABA77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50F9B6AA-C281-434A-B310-200D5C5D1A39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50F9B6AA-C281-434A-B310-200D5C5D1A39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50F9B6AA-C281-434A-B310-200D5C5D1A39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50F9B6AA-C281-434A-B310-200D5C5D1A39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -80,6 +86,7 @@ Global
 		{BED83ABE-733F-4E8F-89B2-CC260A027247} = {0A226FC8-8B91-4392-8169-16D247239839}
 		{8B824F7D-D79F-49DA-99BD-1A6E1D23E0CB} = {0A226FC8-8B91-4392-8169-16D247239839}
 		{34ABC34D-7F54-4118-A8FC-77047CBF48A6} = {0A226FC8-8B91-4392-8169-16D247239839}
+		{50F9B6AA-C281-434A-B310-200D5C5D1A39} = {0A226FC8-8B91-4392-8169-16D247239839}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9645ABE9-CCF0-41EC-B57E-C4C0CC681950}
