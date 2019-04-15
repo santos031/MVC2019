@@ -3,18 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using System.Data;
-using System.Data.Entity;
-using System.Net;
 using WebShop.Models;
 
 namespace WebShop.Controllers
 {
     public class CheckoutController : Controller
     {
-        private WebShopEntites db = new WebShopEntites();
-
+        private WebShopEntities db = new WebShopEntities();
         // GET: Checkout
+
         public ActionResult CreateUser()
         {
             return View();
@@ -22,15 +19,15 @@ namespace WebShop.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult CreateUser([Bind(Include = "Id, Ime, Prezime, Email, AdresaDostave, Kontakt, Napomena"]) 
-            Korisnici korisnici);
+        public ActionResult CreateUser([Bind(Include = "ID, Ime, Prezime, Email, AdresaDostave, Kontakt, Napomena")] Korisnici korisnici)
         {
             if (ModelState.IsValid)
             {
-                db.Korisnici.Add(korisnici);
+                db.Korisnicis.Add(korisnici);
                 db.SaveChanges();
-            return RedirectToAction("CreateOrder", korisnici);
-	        }
+                return RedirectToAction("CreateOrder", korisnici);
+            }
+
             return View(korisnici);
         }
 
@@ -41,16 +38,17 @@ namespace WebShop.Controllers
             narudzba.DatumKreiranja = Convert.ToDateTime(DateTime.Now.ToString("yyyy-MM-dd"));
             narudzba.DatumVrijemeDostave = Convert.ToDateTime(DateTime.Now.AddDays(7).ToString("yyyy-MM-dd"));
             narudzba.JeDostavljeno = false;
-            db.Narudzbe.Add(narudzba);
+            narudzba.Prezime = korisnici.Prezime;
+            narudzba.Email = korisnici.Email;
+            db.Narudzbes.Add(narudzba);
             db.SaveChanges();
 
-            int narudzbaId = naruzbda.Id;
+            int narudzbaId = narudzba.Id;
 
             if (Session["Cart"] != null)
             {
                 List<Proizvodi> lstProizvodi = Session["Cart"] as List<Proizvodi>;
-                List<int> distinctProizvodi = (from proiz in lstProizvodi
-                                               select proiz.Id).Distinct().ToList();
+                List<int> distinctProizvodi = (from proiz in lstProizvodi select proiz.Id).Distinct().ToList();
 
                 foreach (int distItem in distinctProizvodi)
                 {
@@ -59,28 +57,27 @@ namespace WebShop.Controllers
                     detalji.ProizvodId = distItem;
                     detalji.Kolicina = lstProizvodi.Where(x => x.Id == distItem).Count();
                     detalji.JedCijena = lstProizvodi.Where(x => x.Id == distItem).FirstOrDefault().Cijena;
-                    detalji.NarudzbeDetalji.Add(detalji);
+                    db.NarudzbeDetaljis.Add(detalji);
                     db.SaveChanges();
                 }
 
                 Session["narudzbaId"] = narudzbaId;
                 return RedirectToAction("OrderDetails");
             }
+            return RedirectToAction("Index", "Cart");
         }
 
         public ActionResult OrderDetails()
         {
             int id = int.Parse(Session["narudzbaId"].ToString());
-            Narudzbe narudzba = db.Narudzbe.Find(id);
+            Narudzbe narudzba = db.Narudzbes.Find(id);
 
-            if (narudzba==null)
+            if (narudzba == null)
             {
-                return HttpNoTFound();
+                return HttpNotFound();
             }
 
-            List<NarudzbeDetalji> lstDetalji = (from detalji in db.NarudzbeDetalji
-                                                where detalji.NarudzbaId == id
-                                                select detalji).ToList();
+            List<NarudzbeDetalji> lstDetalji = (from detalji in db.NarudzbeDetaljis where detalji.NarudzbaId == id select detalji).ToList();
 
             ViewBag.Detalji = lstDetalji;
             return View(narudzba);

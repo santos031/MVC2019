@@ -1,16 +1,32 @@
 ﻿@model IEnumerable<WebShop.Models.Proizvodi>
+@*WEBSHOP/INDEX*@
 @{ 
+    ViewBag.Title = "Web Shop";
     var listCount = 0;
+    List<WebShop.Models.NarudzbeDetalji> lstprodet = new List<WebShop.Models.NarudzbeDetalji>();
     if (Session["Cart"] != null)
     {
         List<WebShop.Models.Proizvodi> kosarica = Session["Cart"] as
             List<WebShop.Models.Proizvodi>;
         listCount = kosarica.Count();
+
+        lstprodet = Session["prodet"] as List<WebShop.Models.NarudzbeDetalji>;
     }
 }
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink(linkText:"Cart", actionName: "Index", controllerName: "Cart") (@listCount)
+</p>
+
+<p>
+    Detalji narudžbe: <br />
+    @if (lstprodet != null)
+    {
+        @foreach (var item in lstprodet)
+        {
+            @item.Kolicina <br /> @item.JedCijena;
+        }
+    }
 </p>
 <p>
     Košarica ima: @listCount proizvoda

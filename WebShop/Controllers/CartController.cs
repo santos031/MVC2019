@@ -10,7 +10,7 @@ namespace WebShop.Controllers
 {
     public class CartController : Controller
     {
-        private WebShopEntities db = new WebShopEntities();
+        private WebShopEntities db = new WebShopEntities(); //povezivanje sa bazom db (naziv dolazi iz Web.configa)
         public static List<Proizvodi> lstProizvodi = new List<Proizvodi>();
 
         // GET: Cart
