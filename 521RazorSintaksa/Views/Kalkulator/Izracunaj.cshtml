@@ -1,0 +1,63 @@
+﻿@model string
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Izracunaj</title>
+    <style>
+        label{
+            width: 100px;
+            padding-top: 10px;
+            display: inline-block;
+        }
+        input[type=submit]{
+            width: 40px;
+            text-align: center;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Kalkulator:</h3>
+    <form method="post">
+        <div>
+            <label>Broj 1: </label><input type="text" name="br1" value="@ViewBag.Br1" />
+        </div>
+        <div>
+            <label>Broj 2: </label><input type="text" name="br2" value="@ViewBag.Br2" />
+        </div>
+        <br />
+        <div>
+            <input type="submit" name="op" value="+" />
+            <input type="submit" name="op" value="-" />
+            <input type="submit" name="op" value="*" />
+            <input type="submit" name="op" value="/" />
+        </div>
+    </form>
+    <div>
+        @if (Model != null)
+         {
+            <hr />
+            @:Rezultat:
+            switch (Model)
+            {
+                case "+":<strong>@(string.Format("{0:N2}", (decimal)ViewBag.Br1 + (decimal)ViewBag.Br2))</strong>
+                    break;
+                case "-":<strong>@(string.Format("{0:N2}", (decimal)ViewBag.Br1 - (decimal)ViewBag.Br2))</strong>
+                    break;
+                case "*":<strong>@(string.Format("{0:N2}", (decimal)ViewBag.Br1 * (decimal)ViewBag.Br2))</strong>
+                    break;
+                case "/":<strong>@(string.Format("{0:N2}", (decimal)ViewBag.Br1 / (decimal)ViewBag.Br2))</strong>
+                    break;
+                default: <strong>Nepoznata računska operacija!</strong>
+                    break;
+            }
+        }
+    </div>
+</body>
+</html>

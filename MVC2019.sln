@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.16
+VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication_osnove", "WebApplication_osnove\WebApplication_osnove.csproj", "{B49C5249-41F4-4CCF-8C15-9BCCE487D3A3}"
 EndProject
@@ -28,6 +28,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adresar", "Adresar\Adresar.csproj", "{42371614-0D19-46EF-A605-DC8C11FAB370}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebShop", "WebShop\WebShop.csproj", "{4D2EC6C7-BCA9-453B-8CE6-5BA21259AD45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "321GeneriranjeIzlazaIzAkcijskihMetoda", "321GeneriranjeIzlazaIzAkcijskihMetoda\321GeneriranjeIzlazaIzAkcijskihMetoda.csproj", "{C3586EA9-BB19-48C3-A28E-08FFDA10BF95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "521RazorSintaksa", "521RazorSintaksa\521RazorSintaksa.csproj", "{EA73C19D-98E7-4110-ADE3-14BDE6879686}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "611HTMLHelperMetode", "611HTMLHelperMetode\611HTMLHelperMetode.csproj", "{71AA5040-06A8-415D-AC0F-CF4A66C4A862}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -83,6 +89,18 @@ Global
 		{4D2EC6C7-BCA9-453B-8CE6-5BA21259AD45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D2EC6C7-BCA9-453B-8CE6-5BA21259AD45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D2EC6C7-BCA9-453B-8CE6-5BA21259AD45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3586EA9-BB19-48C3-A28E-08FFDA10BF95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3586EA9-BB19-48C3-A28E-08FFDA10BF95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3586EA9-BB19-48C3-A28E-08FFDA10BF95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3586EA9-BB19-48C3-A28E-08FFDA10BF95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA73C19D-98E7-4110-ADE3-14BDE6879686}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA73C19D-98E7-4110-ADE3-14BDE6879686}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA73C19D-98E7-4110-ADE3-14BDE6879686}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA73C19D-98E7-4110-ADE3-14BDE6879686}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71AA5040-06A8-415D-AC0F-CF4A66C4A862}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71AA5040-06A8-415D-AC0F-CF4A66C4A862}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71AA5040-06A8-415D-AC0F-CF4A66C4A862}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71AA5040-06A8-415D-AC0F-CF4A66C4A862}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -93,6 +111,9 @@ Global
 		{8B824F7D-D79F-49DA-99BD-1A6E1D23E0CB} = {0A226FC8-8B91-4392-8169-16D247239839}
 		{34ABC34D-7F54-4118-A8FC-77047CBF48A6} = {0A226FC8-8B91-4392-8169-16D247239839}
 		{4D2EC6C7-BCA9-453B-8CE6-5BA21259AD45} = {0A226FC8-8B91-4392-8169-16D247239839}
+		{C3586EA9-BB19-48C3-A28E-08FFDA10BF95} = {0A226FC8-8B91-4392-8169-16D247239839}
+		{EA73C19D-98E7-4110-ADE3-14BDE6879686} = {0A226FC8-8B91-4392-8169-16D247239839}
+		{71AA5040-06A8-415D-AC0F-CF4A66C4A862} = {0A226FC8-8B91-4392-8169-16D247239839}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9645ABE9-CCF0-41EC-B57E-C4C0CC681950}
