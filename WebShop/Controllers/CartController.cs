@@ -26,17 +26,19 @@ namespace WebShop.Controllers
 
         public ActionResult AddToCart(int id)
         {
-            Proizvodi proizvod = db.Proizvodis.Find(id);
-            lstProizvodi.Add(proizvod);
+            Proizvodi proizvodi = db.Proizvodis.Find(id);//dio entity frameworka na koji mapira
+            int prodet = db.Proizvodis.Find(id).NarudzbeDetaljis.Count;
+            Session["prodet"] = prodet;
+            lstProizvodi.Add(proizvodi);
             Session["Cart"] = lstProizvodi;
 
-            if (proizvod == null)
+            if (proizvodi == null)
             {
                 return HttpNotFound("GREŠKA: proizvod nije pronađen!");
             }
-            var proizvodi = db.Proizvodis.Include(p => p.MjereProizvoda);
+            var proi = db.Proizvodis.Include(p => p.MjereProizvoda);
 
-            return RedirectToAction(actionName: "Index", controllerName: "WebShop", routeValues: proizvodi.ToList());
+            return RedirectToAction(actionName: "Index", controllerName: "WebShop", routeValues: proi.ToList());
         }
 
         public ActionResult RemoveFromCart(int index)
