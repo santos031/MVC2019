@@ -26,6 +26,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ado_net_spajanje_na_bazu", "Ado_net_spajanje_na_bazu\Ado_net_spajanje_na_bazu.csproj", "{6A19584D-0E30-4A69-9F01-B867C8EABA77}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adresar", "Adresar\Adresar.csproj", "{42371614-0D19-46EF-A605-DC8C11FAB370}"
+	ProjectSection(ProjectDependencies) = postProject
+		{14923F46-E8C5-4BD8-B37D-AA8FE8B005FF} = {14923F46-E8C5-4BD8-B37D-AA8FE8B005FF}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebShop", "WebShop\WebShop.csproj", "{4D2EC6C7-BCA9-453B-8CE6-5BA21259AD45}"
 EndProject
