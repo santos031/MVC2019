@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2003
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication_osnove", "WebApplication_osnove\WebApplication_osnove.csproj", "{B49C5249-41F4-4CCF-8C15-9BCCE487D3A3}"
 EndProject
@@ -34,6 +34,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "521RazorSintaksa", "521RazorSintaksa\521RazorSintaksa.csproj", "{EA73C19D-98E7-4110-ADE3-14BDE6879686}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "611HTMLHelperMetode", "611HTMLHelperMetode\611HTMLHelperMetode.csproj", "{71AA5040-06A8-415D-AC0F-CF4A66C4A862}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adresar.WcfService", "Adresar.WcfService\Adresar.WcfService.csproj", "{14923F46-E8C5-4BD8-B37D-AA8FE8B005FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -101,6 +103,10 @@ Global
 		{71AA5040-06A8-415D-AC0F-CF4A66C4A862}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71AA5040-06A8-415D-AC0F-CF4A66C4A862}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71AA5040-06A8-415D-AC0F-CF4A66C4A862}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14923F46-E8C5-4BD8-B37D-AA8FE8B005FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14923F46-E8C5-4BD8-B37D-AA8FE8B005FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14923F46-E8C5-4BD8-B37D-AA8FE8B005FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14923F46-E8C5-4BD8-B37D-AA8FE8B005FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
