@@ -11,7 +11,8 @@ namespace Ispit.Controllers
 {
     public class PopisController : Controller
     {
-        public string connString = @"Data Source = SKYNET\SQLEXPRESS; Initial Catalog = BozicniPokloni; Integrated Security = True; Connect Timeout = 30; Encrypt = False; TrustServerCertificate = True;";
+        // public string KucniconnString = @"Data Source = SKYNET\SQLEXPRESS; Initial Catalog = BozicniPokloni; Integrated Security = True; Connect Timeout = 30; Encrypt = False; TrustServerCertificate = True;";
+        public string connString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=BozicniPokloni;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
         string cmdTxt = "";
         public SqlConnection conn;
 
